@@ -37,7 +37,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ghcr.io/boring-registry/boring-registry:latest,ghcr.io/boring-registry/boring-registry:${{ env.tag_name }}
+          tags: ghcr.io/flared/boring-registry:latest,ghcr.io/flared/boring-registry:${{ env.tag_name }}
           build-args: |
             VERSION=${{ env.tag_name }}
             GIT_COMMIT=${{ github.sha }}
